@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Produk</title>
+	<script src="Js/skripku.js"></script>
+	<script src="Js/jquery.js"></script>
+	<script>
+		$("document").ready(function(){
+			alert("Selamat Belajar jQuery");
+		});
+	</script>
+</head>
+<body>
+    <h3 align="center">Toko Sebelah<br>Gg. Mulia No. 72 Jatimulya</h3>
+    <form id="produk">
+	<table align="center" width="40%" cellpadding="7">
+		<thead>
+			<tr bgcolor="#40E0D0">
+				<th colspan="2">Form Produk</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td width="30%">Nama Produk</td>
+				<td width="70%">
+					<input type="text" name="nama" value="" size="50%" />
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Produk</td>
+				<td>
+					<select name="jenis">
+						<option value="">-- Pilih Kategori Produk --</option>
+						<option value="Elektronik">Elektronik</option>
+						<option value="Furniture">Furniture</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Harga</td>
+				<td>
+					<input type="text" name="harga" value="" size="50%" />
+				</td>
+			</tr>
+			<tr>
+				<td>Jumlah</td>
+				<td>
+					<input type="text" name="jumlah" value="" size="50%"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Total Harga</td>
+				<td>
+					<input type="text" name="tohar" value="" disabled size="50%"/>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr bgcolor="#40E0D0">
+				<th colspan="2">
+					<input type="button" onclick="pembelian()" name="kirim" value="kirim">
+					&nbsp; &nbsp;
+					<input type="reset" name="batal" value="batal">
+				</th>
+			</tr>
+		</tfoot>
+    </table>
+    </form>
+</body>
+</html>

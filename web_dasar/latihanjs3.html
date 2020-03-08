@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan jQuery</title>
+        <script src="Js/jquery.js"></script>
+        <script>
+            $("document").ready(function(){
+                $("input").click(function(){
+                    alert("Selamat anda berhasil membuat popup dengan jQuery");
+                });
+            //ketika mouse menghampiri gambar yang sedang berjalan maka gambar akan berhenti    
+            $("marquee").mouseover(function(){
+                this.stop();
+            });
+            //ketika mouse keluar gambar yang sedang berjalan maka gambar akan kembali
+            $("marquee").mouseout(function(){
+                this.start();
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="proses" value="Click Me!"/>
+            <br/>
+            <marquee>
+            <img src="images/html.png" width="20%"/>
+            </marquee>
+        </form>
+    </body>
+</html>

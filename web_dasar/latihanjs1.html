@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan JavaScript</title>
+    </head>
+    <body>
+        <script language="javascript">
+            alert("Selamat Belajar Javascript");
+            //deklarasi dan inisialisasi variabel
+            var name = "Salamah Nur Aqidah";
+            var age = 23;
+            var weight = 53.5;
+            var gender = "P";
+            var jabatan = "Data Scientist";
+            //logic
+            /*
+            if(gender == "P"){
+                var panggilan = "Ukhti"
+            }
+            else{
+                var panggilan = "Akhi"
+            }
+            */
+            //ternary
+            var panggilan = (gender == "P") ? "Ukti" : "Akhi";
+            //tanda tanya pemisah antara logic dengan true false 2 kemungkinan kalo lebih dari itu pake if else
+            //multi kondisi
+            if(age >= 0 && age <= 5) var category = "Balita";
+            else if(age > 5 && age <= 12) var category = "Anak-Anak";
+            else if(age > 12 && age <=17) var category = "Remaja";
+            else if(age >17 && age <=40) var category = "Dewasa";
+            else if(age > 40) var category = "Tua";
+            else var category = "";
+
+            //switch case
+            switch (jabatan){
+                case "IT Konsultan" : var salary = 8000000; break;
+                case "Data Scientist" : var salary = 10000000; break;
+                case "Manager" : var salary = 5000000; break;
+                case "Staff IT" : var salary = 6000000; break;
+                default: break;
+            }
+            
+            //cetak data
+            document.write(
+                "Name : " + panggilan + " "+name +
+                "<br/>Age : " +age + " tahun " +
+                "<br/>Category : " +category +
+                "<br/>Weight : " +weight + " kg" +
+                "<br/>Jabatan : " +jabatan +
+                "<br/>Salary : Rp. " +salary          
+            )
+        </script>
+    </body>
+</html>

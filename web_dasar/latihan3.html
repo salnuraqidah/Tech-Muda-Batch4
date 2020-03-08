@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Latihan Ketiga</title>
+	</head>
+	<body>
+		<table align="center" width="40%" border="0" cellpadding="10" cellspacing="0">
+			<thead>
+				<tr bgcolor="beige">
+					<th colspan="2">Formulir Online</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="30%">Name</td>
+					<td>
+						<input type="text" name="nama"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						<input type="password" name="pass"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type="radio" name="jenisKelamin" value="l" />Pria
+						&nbsp;
+						<input type="radio" name="jenisKelamin" value="p" checked="true" />Wanita
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">Hobby</td>
+					<td>
+						<input type="checkbox" name="hb" value="berenang">Berenang<br/>
+						<input type="checkbox" name="hb" value="memanah" checked="true">Memanah<br/>
+						<input type="checkbox" name="hb" value="berkuda">Berkuda<br/>
+						<input type="checkbox" name="hb" value="membaca">Membaca<br/>
+						<input type="checkbox" name="hb" value="hiking">Hiking<br/>
+					</td>
+				</tr>
+				<tr>
+					<td>Pendidikan</td>
+					<td>
+						<select name="pendidikan">
+							<option value="">-- Pilih Pendidikan --</option>
+							<option value="SMA">SMA</option>
+							<option value="D3">D3</option>
+							<option value="S1" selected="true">S1</option>
+							<option value="S2">S2</option>
+							<option value="S3">S3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">Alamat</td>
+					<td>
+						<textarea name="alamat" cols="50" rows="6"></textarea>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr bgcolor="pink">
+					<th colspan="2">
+						<input type="submit" name="proses" value="Simpan">
+						&nbsp;&nbsp;
+						<input type="reset" name="unproses" value="Batal">
+					</th>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

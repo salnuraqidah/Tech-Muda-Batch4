@@ -1,0 +1,70 @@
+body{
+    background-color: maroon;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+p{
+    text-align: justify;
+    font-style: normal;
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+fieldset{
+    /*
+    border-width: 5px;
+    border-style: groove;
+    border-color: mediumspringgreen;
+    */
+    border: ridge mediumspringgreen 5px;
+    border-radius: 50px;
+    background-image: linear-gradient(green, greenyellow, yellowgreen);
+}
+legend{
+    border: 2px yellowgreen double;
+    padding: 5px 10px 5px 10px; /* top, right, buttom, left (serah jarum jam) */
+    background-color: yellowgreen;
+    color: purple;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+h1{
+    color: blue;
+    text-shadow: 2px 2px aqua;
+}
+ol{
+    list-style-image: url('../images/smile.png');
+}
+ul{
+    list-style-image: url('../images/heart.png');
+}
+
+.p2:first-letter{
+    font-size: 60pt;
+    color: blueviolet;
+    float: left;
+    padding-right: 5px;
+}
+
+/*-------pseudo class-------*/
+div#menu{
+    text-align: center;
+}
+a#none:link,a#none:visited,a#none:active{
+    text-decoration: none;
+    font-size: 16pt;
+    color: crimson;
+    border: 1px solid greenyellow;
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 32pt;
+    color: blue;
+    border: 5px inset red;
+    padding: 5px;
+    background-color: azure;
+    border-radius: 55px;
+}
+
