@@ -1,1 +1,9 @@
-# Empty CSS file for your own CSS
+ul li#wa{
+    list-style-image: url('../images/whatsapp.png');
+}
+ul li#ig{
+    list-style-image: url('../images/ig.png');
+}
+ul li#pin{
+    list-style-image: url('../images/pin.png');
+}

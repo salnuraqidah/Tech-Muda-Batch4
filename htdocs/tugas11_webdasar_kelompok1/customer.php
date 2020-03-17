@@ -19,10 +19,10 @@
       ?>
     <tr>
       <th scope="row"><?= $no ?></th>
-      <td><?= $cus['name'] ?></td>
-      <td><?= $cus['phoneNumber'] ?></td>
+      <td><?= $cus['nama'] ?></td>
+      <td><?= $cus['nomorHp'] ?></td>
       <td><?= $cus['email'] ?></td>
-      <td><?= $cus['address'] ?></td>
+      <td><?= $cus['alamat'] ?></td>
     </tr>
     <?php $no++; } ?>
   </tbody>

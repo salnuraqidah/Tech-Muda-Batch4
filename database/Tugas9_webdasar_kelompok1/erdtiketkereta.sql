@@ -43,10 +43,12 @@ CREATE TABLE `checkout` (
 
 CREATE TABLE `customer` (
   `idcustomer` int(11) NOT NULL,
-  `phoneNumber` int(11) NOT NULL,
-  `address` text NOT NULL,
-  `name` varchar(45) NOT NULL,
-  `email` varchar(20) NOT NULL
+   `name` varchar(45) NOT NULL,
+   `phoneNumber` int(11) NOT NULL,
+    `email` varchar(20) NOT NULL
+    `address` text NOT NULL,
+  
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

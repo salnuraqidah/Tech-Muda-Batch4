@@ -14,12 +14,12 @@
 							 <a class="nav-link" href="index.php?hal=aboutus">About Us</a>
 						</li>
 						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Pesan Disini</a>
+							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Klik Disini</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                  <a class="dropdown-item" href="index.php?hal=customer">Customer</a> 
-                                 <a class="dropdown-item" href="index.php?hal=order">Order</a> 
-                                 <a class="dropdown-item" href="index.php?hal=payment">Payment</a>
-                                 <a class="dropdown-item" href="index.php?hal=checkout">Check Out</a>
+                                 <a class="dropdown-item" href="index.php?hal=pesanan">Order</a> 
+                                 <a class="dropdown-item" href="index.php?hal=pembayaran">Payment</a>
+                                 <a class="dropdown-item" href="index.php?hal=checkOut">Check Out</a>
 							</div>
 						</li>
 					</ul>

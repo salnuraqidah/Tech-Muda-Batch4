@@ -1,14 +1,11 @@
 <div class="row">
 		<div class="col-md-12">
-			<div class="alert alert-success alert-dismissable">
+			
+			<div class="alert alert-dismissible alert-primary">
 				 
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-					×
-				</button>
-				<h4>
-					Alert!
-				</h4> <strong>Warning!</strong> Best check yo self, you're not looking too good. <a href="#" class="alert-link">alert link</a>
+			<h6 align="center"> Design by Kelompok 1 &copy; Tech Muda Batch 4</h6> 
 			</div>
+			
 		</div>
 	</div>
 </div>
@@ -19,3 +16,4 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+

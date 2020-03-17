@@ -1,45 +1,35 @@
 <div class="col-md-4">
-			<div class="list-group">
-				 <a href="#" class="list-group-item list-group-item-action active">Pesan Tiket Disini</a>
-                 <form>
-<table align="center">
-<tbody>
-<tr> <br/>
-<td>
-  <div class="form-group">
-    <select>
+<div class="list-group">
+
+<h5 class="list-group-item list-group-item-action active">Pesan Tiket Disini</h5>
+
+<form>
+    <div class="form-group">
+    <select class="form-control">
+
     <option> Stasiun Awal </option>
     <option> Jakarta </option>
     <option> Bandung </option>
-    <option> Semanrang </option>
+    <option> Semarang </option>
     <option> Yogyakarta </option>
     </select>
+    </select>
   </div>
-  </td>
-  <tr>
-  <td>
   <div class="form-group">
-  <select>
+    <select class="form-control">
     <option> Stasiun Tujuan </option>
     <option> Jakarta </option>
     <option> Bandung </option>
-    <option> Semanrang </option>
+    <option> Semaraang </option>
     <option> Yogyakarta </option>
     </select>
   </div>
-  </td>
-  </tr>
-  <tr>
-  <td>
   <div class="form-group">
-  <input type="datetime-local" value="Tanggal Berangkat">
+  <label for="exampleFormControlInput1">Tanggal Berangkat</label>  
+  <input class="form-control" type="datetime-local">
   </div>
-  </td>
-  </tr>
-  <tr>
-  <td>
   <div class="form-group">
-  <select>
+    <select class="form-control">
     <option> Jumlah </option>
     <option> 1 Dewasa </option>
     <option> 2 Dewasa </option>
@@ -47,18 +37,12 @@
     <option> 4 Dewasa </option>
     </select>
   </div>
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <button type="submit" class="btn btn-primary">Pesan & Cari Kereta</button>
-  </td>
-  </tr>
-  </tbody>
-  </table>
-</form>
+  <div class="list-group">
+  <button type="submit" class="btn btn-primary mb-2">Pesan & Cari Kereta</button>
+</div>
 
-				</div> <a href="#" class="list-group-item list-group-item-action active justify-content-between"> <span class="badge badge-light badge-pill">14</span></a>
-			</div>
-		</div>
-	</div>
+
+  
+</form>
+</div>
+</div>
