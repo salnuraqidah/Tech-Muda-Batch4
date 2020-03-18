@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Nilai</title>
+        <script src="Js/scriptNilai.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <form id="daftarNilai">
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th colspan="2">Form Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nama</td>
+                        <td>
+                            <input type="text" name="nama" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Materi</td>
+                        <td>
+                            <select id="materi">
+                                <option value="">-- Pilih --</option>
+                                <option value="Matematika">Matematika</option>
+                                <option value="Fisika">Fisika</option>
+                                <option value="PKN">PKN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nilai</td>
+                        <td>
+                            <input type="text" name="nilai" value=""/>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <input type="button" onclick="formNilai()" name="save" value="save" /> &nbsp; &nbsp;
+                            <input type="button" onclick="hapus()" name="cancel"  value="cancel" />
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
