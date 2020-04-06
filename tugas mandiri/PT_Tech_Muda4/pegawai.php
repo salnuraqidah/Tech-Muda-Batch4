@@ -7,6 +7,8 @@
       <th scope="col">Nama</th>
       <th scope="col">Gender</th>
       <th scope="col">Alamat</th>
+      <th scope="col">Divisi</th>
+      <th scope="col">Jabatan</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +24,9 @@
       <td><?= $cus['nip'] ?></td>
       <td><?= $cus['nama'] ?></td>
       <td><?= $cus['gender'] ?></td>
-      <td><?= $cus['alamat'] ?></td>           
+      <td><?= $cus['alamat'] ?></td>
+      <td><?= $cus['divisi'] ?></td>
+      <td><?= $cus['jabatan'] ?></td>                 
     </tr>
     <?php $no++; } ?>
   </tbody>

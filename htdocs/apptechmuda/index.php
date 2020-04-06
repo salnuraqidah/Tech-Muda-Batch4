@@ -1,6 +1,8 @@
 <?php
 include_once 'koneksi.php';
 include_once 'models/Pegawai.php';
+include_once 'models/Divisi.php';
+include_once 'models/Jabatan.php';
 include_once 'header.php';
 include_once 'menu.php';
 echo '<br/>';

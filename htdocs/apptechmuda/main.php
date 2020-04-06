@@ -3,6 +3,8 @@
 			<?php
 			//tangkap request dari url/menu
 			$hal = $_GET['hal'];
+			//jika ada request
+			//maka diarahkan ke halaman yg diminta
 			if(!empty($hal)){
 				include_once $hal.'.php';
 			}
