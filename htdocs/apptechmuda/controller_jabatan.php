@@ -13,9 +13,14 @@ $model = new Jabatan();
 
 switch ($tombol) {
     case 'simpan': $model->input($data); break;
-    
-    default:
-        # code...break;
+    case 'ubah': 
+        $data[] = $_POST['idx']; // tangkap hidden field tanda tanya kedua di model
+        $model->ubah($data); break;
+    case 'hapus':
+        unset($data);
+        $id = [$_POST['idx']];
+        $model->hapus($id); break;    
+    default: header('location:index.php?hal=jabatan');
 }
 //4. landing page
 header('location:index.php?hal=jabatan');
