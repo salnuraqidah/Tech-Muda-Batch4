@@ -9,15 +9,27 @@ $bpjs = $_POST['bpjs'];
 $lain2 = $_POST['lain2'];
 
 $data = [
-    $nama, $gapok, $tunjab, $bpjs, $lain2
+  $nama, $gapok, $tunjab, $bpjs, $lain2
 ];
-
-$tombol = $_POST['submit'];
+$data2 = [
+  $gapok, $tunjab, $bpjs, $lain2
+];
+$tombol = $_POST['proses'];
 
 $model = new Gaji();
 
 if ($tombol == 'simpan') { //simpan adalah value dari button submit
     $model->simpan($data);
+}
+else if($tombol == 'ubah'){
+  $data2[] = $_POST['idx'];
+  $model->ubah($data2);
+}
+else if($tombol == 'hapus'){
+  unset($data); //hapus ? di atas
+  $id = [$_POST['idx']];
+  $model->hapus($id);
+
 }
 else{ //tombol batal tidak ada perubahan data baru
     header('Location:index.php?hal=gaji');

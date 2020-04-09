@@ -17,10 +17,30 @@ class Jabatan{
         return $rs;
     }
     public function input($data){
-        $sql = "insert into jabatan (nama) values (?)";
+        $sql = "INSERT INTO jabatan (nama) values (?)";
         //prepare statement PDO
         $ps = $this->koneksi->prepare($sql); //persiapan
         $ps->execute($data); //eksekusi
+    }
+    public function getJabatan($id){
+        $sql = "select * from jabatan where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($id); //eksekusi
+        $rs = $ps->fetch(); // ambil satu baris data yang mau diedit
+        return $rs;
+    }
+    public function ubah($data){
+        $sql = "update jabatan set nama=? where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($data); //eksekusi
+    }
+    public function hapus($id){
+        $sql = "delete from jabatan where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($id); //eksekusi
     }
 };
 ?>

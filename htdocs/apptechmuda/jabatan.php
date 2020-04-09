@@ -1,7 +1,8 @@
 <?php
-$ar_judul = ['No','Nama Jabatan'];
+$ar_judul = ['No','Nama Jabatan','Action'];
 ?>
-<a href="index.php?hal=form_jabatan" type="button" class="btn btn-primary">Input Data</a>
+<a href="index.php?hal=form_jabatan" type="button" 
+    class="btn btn-primary">Input Data</a>
 <br/>
 <h3>Data Jabatan</h3>
 <table class="table table-sm table-dark">
@@ -25,6 +26,10 @@ $ar_judul = ['No','Nama Jabatan'];
         <tr>
           <th scope="row"><?= $no ?></th>
           <td><?= $jab['nama'] ?></td>
+          <td>
+              <a href="index.php?hal=form_jabatan&idedit=<?= $jab['id'] ?>" type="button" 
+                  class="btn btn-warning">Edit</a>
+          </td>
         </tr>
 <?php $no++; } ?>
   </tbody>

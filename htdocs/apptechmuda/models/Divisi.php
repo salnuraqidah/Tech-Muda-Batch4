@@ -22,5 +22,25 @@ class Divisi{
         $ps = $this->koneksi->prepare($sql); //persiapan
         $ps->execute($data); //eksekusi
     }
+    public function getDivisi($id){
+        $sql = "select * from divisi where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($id); //eksekusi
+        $rs = $ps->fetch(); // ambil satu baris data yang mau diedit
+        return $rs;
+    }
+    public function ubah($data){
+        $sql = "update divisi set nama=? where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($data); //eksekusi
+    }
+    public function hapus($id){
+        $sql = "delete from divisi where id=?";
+        //prepare statement PDO
+        $ps = $this->koneksi->prepare($sql); //persiapan
+        $ps->execute($id); //eksekusi
+    }
 };
 ?>

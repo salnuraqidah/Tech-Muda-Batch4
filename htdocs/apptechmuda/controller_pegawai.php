@@ -29,7 +29,7 @@ $data = [
 ];
 
 //3. excute button
-$tombol = $_POST['submit'];
+$tombol = $_POST['proses'];
 
 //4. create object
 $model = new Pegawai();
@@ -38,10 +38,14 @@ if ($tombol == 'simpan') { //simpan adalah value dari button submit
     $model->simpan($data);
 }
 else if($tombol == 'ubah'){
-    //code
+    $data[] = $_POST['idx']; //tangkap hidden field dari form u/ ? 11 klausa where id
+    $model->ubah($data);
 }
 else if($tombol == 'hapus'){
-    //code
+    unset($data); //hapus ? di atas
+    $id = [$_POST['idx']];
+    $model->hapus($id);
+
 }
 else{ //tombol batal tidak ada perubahan data baru
     header('Location:index.php?hal=pegawai');
